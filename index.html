@@ -1,273 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Valentine’s ❤️</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Happy Valentine’s ❤️</title>
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Poppins, sans-serif;
-    }
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins, sans-serif;
+}
 
-    body {
-      min-height: 100vh;
-      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 25px;
-      overflow-x: hidden;
-    }
+body{
+  min-height:100vh;
+  background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:25px;
+  overflow-x:hidden;
+}
 
-    .card {
-      width: 100%;
-      max-width: 720px;
-      background: rgba(255, 255, 255, 0.65);
-      backdrop-filter: blur(12px);
-      border-radius: 22px;
-      padding: 25px;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.18);
-      text-align: center;
-      position: relative;
-    }
+.card{
+  width:100%;
+  max-width:720px;
+  background:rgba(255,255,255,0.7);
+  backdrop-filter:blur(12px);
+  border-radius:22px;
+  padding:25px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.18);
+  text-align:center;
+  position:relative;
+}
 
-    h1 {
-      font-size: 2.2rem;
-      color: #b3003b;
-      margin-bottom: 10px;
-    }
+h1{
+  font-size:2.2rem;
+  color:#b3003b;
+  margin-bottom:10px;
+}
 
-    .sub {
-      font-size: 1rem;
-      opacity: 0.85;
-      margin-bottom: 18px;
-    }
+.sub{
+  font-size:1rem;
+  opacity:0.85;
+  margin-bottom:18px;
+}
 
-    .hero-photo img {
-      width: 100%;
-      max-height: 320px;
-      object-fit: cover;
-      border-radius: 18px;
-      border: 4px solid rgba(255, 255, 255, 0.9);
-    }
+.hero-photo img{
+  width:100%;
+  max-height:320px;
+  object-fit:cover;
+  border-radius:18px;
+  border:4px solid rgba(255,255,255,0.9);
+}
 
-    .message {
-      margin-top: 18px;
-      padding: 18px;
-      background: rgba(255, 255, 255, 0.6);
-      border-radius: 18px;
-    }
+.message{
+  margin-top:18px;
+  padding:18px;
+  background:rgba(255,255,255,0.6);
+  border-radius:18px;
+}
 
-    .message h2 {
-      color: #b3003b;
-      margin-bottom: 8px;
-    }
+.message h2{
+  color:#b3003b;
+  margin-bottom:8px;
+}
 
-    .message p {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
+.message p{
+  font-size:1rem;
+  line-height:1.6;
+}
 
-    .love-line {
-      margin-top: 10px;
-      font-weight: 700;
-      color: #b3003b;
-    }
+.love-line{
+  margin-top:10px;
+  font-weight:700;
+  color:#b3003b;
+}
 
-    .gallery {
-      margin-top: 22px;
-    }
+.gallery{
+  margin-top:22px;
+}
 
-    .gallery h2 {
-      color: #b3003b;
-      margin-bottom: 12px;
-    }
+.gallery h2{
+  color:#b3003b;
+  margin-bottom:12px;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
-    }
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
 
-    .grid img {
-      width: 100%;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 14px;
-      transition: 0.25s ease;
-      cursor: pointer;
-    }
+.grid img{
+  width:100%;
+  height:120px;
+  object-fit:cover;
+  border-radius:14px;
+  transition:0.25s ease;
+  cursor:pointer;
+}
 
-    .grid img:hover {
-      transform: scale(1.06);
-    }
+.grid img:hover{
+  transform:scale(1.06);
+}
 
-    .proposal {
-      margin-top: 24px;
-      padding: 18px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.6);
-    }
+.proposal{
+  margin-top:24px;
+  padding:18px;
+  border-radius:18px;
+  background:rgba(255,255,255,0.6);
+}
 
-    .proposal h2 {
-      color: #b3003b;
-    }
+.proposal h2{
+  color:#b3003b;
+}
 
-    .btns {
-      margin-top: 14px;
-      display: flex;
-      justify-content: center;
-      gap: 14px;
-      position: relative;
-    }
+.btns{
+  margin-top:14px;
+  display:flex;
+  justify-content:center;
+  gap:14px;
+}
 
-    button {
-      border: none;
-      padding: 12px 18px;
-      border-radius: 14px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.2s ease;
-    }
+button{
+  border:none;
+  padding:12px 18px;
+  border-radius:14px;
+  font-size:1rem;
+  cursor:pointer;
+  transition:0.2s ease;
+}
 
-    .yes {
-      background: #ff2e74;
-      color: white;
-      font-weight: 700;
-    }
+.yes{
+  background:#ff2e74;
+  color:white;
+  font-weight:700;
+}
 
-    .yes:hover {
-      transform: scale(1.06);
-    }
+.yes:hover{
+  transform:scale(1.06);
+}
 
-    .no {
-      background: #222;
-      color: white;
-    }
+.no{
+  background:#222;
+  color:white;
+}
 
-    .result {
-      margin-top: 16px;
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: #b3003b;
-    }
+.result{
+  margin-top:16px;
+  font-size:1.2rem;
+  font-weight:700;
+  color:#b3003b;
+}
 
-    footer {
-      margin-top: 20px;
-      opacity: 0.75;
-      font-size: 0.9rem;
-    }
+footer{
+  margin-top:20px;
+  opacity:0.75;
+  font-size:0.9rem;
+}
 
-    /* Floating hearts */
-    .hearts::before,
-    .hearts::after {
-      content: "❤️ 💕 💖 💘 💗";
-      position: fixed;
-      top: -10%;
-      left: 0;
-      width: 100%;
-      font-size: 24px;
-      opacity: 0.35;
-      animation: floatHearts 10s linear infinite;
-      pointer-events: none;
-      user-select: none;
-    }
+/* Floating hearts */
+.hearts::before,
+.hearts::after{
+  content:"❤️ 💕 💖 💘 💗";
+  position:fixed;
+  top:-10%;
+  left:0;
+  width:100%;
+  font-size:24px;
+  opacity:0.35;
+  animation:floatHearts 10s linear infinite;
+  pointer-events:none;
+}
 
-    .hearts::after {
-      top: -20%;
-      opacity: 0.2;
-      animation-duration: 14s;
-    }
+.hearts::after{
+  top:-20%;
+  opacity:0.2;
+  animation-duration:14s;
+}
 
-    @keyframes floatHearts {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(140vh); }
-    }
+@keyframes floatHearts{
+  0%{transform:translateY(0);}
+  100%{transform:translateY(140vh);}
+}
 
-    @media (max-width: 650px) {
-      .grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      h1 {
-        font-size: 1.8rem;
-      }
-    }
-  </style>
+@media(max-width:650px){
+  .grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+  h1{
+    font-size:1.8rem;
+  }
+}
+</style>
 </head>
 
 <body>
-  <div class="hearts"></div>
+<div class="hearts"></div>
 
-  <main class="card">
-    <h1>Happy Valentine’s Day ❤️</h1>
-    <p class="sub">
-      To the prettiest girl in my world 🌷  
-      <br />
-      I made this just for you.
-    </p>
+<main class="card">
+<h1>Happy Valentine’s Day ❤️</h1>
 
-    <div class="hero-photo">
-      <img src="photos/1.jpg" alt="Us" />
-    </div>
+<p class="sub">
+To the prettiest girl in my world 🌷<br>
+I made this just for you.
+</p>
 
-    <section class="message">
-      <h2>My Message 💌</h2>
-      <p>
-        You make my days softer, happier, and more beautiful.  
-        I don’t need a perfect world — I just need you in mine.
-      </p>
-      <p class="love-line">I love you. Always. ❤️</p>
-    </section>
+<!-- HERO IMAGE -->
+<div class="hero-photo">
+  <img src="photo1.jpeg" alt="Us">
+</div>
 
-    <section class="gallery">
-      <h2>Our Photos 📸</h2>
-      <div class="grid">
-        <img src="photo1.jpeg">
-<img src="photo2.jpeg">
-<img src="photo3.jpeg">
-<img src="photo4.jpeg">
-<img src="photo5.jpeg">
+<section class="message">
+<h2>My Message 💌</h2>
+<p>
+You make my days softer, happier, and more beautiful.
+I don’t need a perfect world — I just need you in mine.
+</p>
+<p class="love-line">I love you. Always. ❤️</p>
+</section>
 
-        
-      </div>
-    </section>
+<section class="gallery">
+<h2>Our Photos 📸</h2>
+<div class="grid">
+  <img src="photo1.jpeg">
+  <img src="photo2.jpeg">
+  <img src="photo3.jpeg">
+  <img src="photo4.jpeg">
+  <img src="photo5.jpeg">
+</div>
+</section>
 
-    <section class="proposal">
-      <h2>One Important Question 😳</h2>
-      <p>Will you be my Valentine? 💖</p>
+<section class="proposal">
+<h2>One Important Question 😳</h2>
+<p>Will you be my Valentine? 💖</p>
 
-      <div class="btns">
-        <button class="yes" onclick="yesClicked()">YES 💘</button>
-        <button class="no" onmouseover="moveNoButton(this)">NO 😭</button>
-      </div>
+<div class="btns">
+<button class="yes" onclick="yesClicked()">YES 💘</button>
+<button class="no" onmouseover="moveNoButton(this)">NO 😭</button>
+</div>
 
-      <div id="result" class="result"></div>
-    </section>
+<div id="result" class="result"></div>
+</section>
 
-    <footer>
-      Made with ❤️ by your boyfriend
-    </footer>
-  </main>
+<footer>
+Made with ❤️ by your boyfriend
+</footer>
+</main>
 
-  <script>
-    function yesClicked() {
-      document.getElementById("result").innerHTML =
-        "YAYYYY 😭💖💖💖 I LOVE YOU SO MUCH!!!";
-    }
+<script>
+function yesClicked(){
+document.getElementById("result").innerHTML =
+"YAYYYY 😭💖💖💖 I LOVE YOU SO MUCH!!!";
+}
 
-    function moveNoButton(btn) {
-      const x = Math.floor(Math.random() * 220) - 110;
-      const y = Math.floor(Math.random() * 120) - 60;
+function moveNoButton(btn){
+const x=Math.floor(Math.random()*220)-110;
+const y=Math.floor(Math.random()*120)-60;
+btn.style.transform=`translate(${x}px, ${y}px)`;
+}
+</script>
 
-      btn.style.transform = `translate(${x}px, ${y}px)`;
-    }
-  </script>
 </body>
-
 </html>
